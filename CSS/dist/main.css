@@ -1,0 +1,240 @@
+html, body {
+  margin: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.toggle-collapse {
+  position: absolute;
+  top: 0;
+  width: 90%;
+  cursor: pointer;
+  display: none;
+}
+
+.toggle-collapse .toggle-icons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.7rem 0;
+  font-size: 1.4rem;
+  color: grey;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.nav-link {
+  padding: 1.6rem 1rem;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+.nav-link :hover {
+  background-color: midnightblue;
+  color: white;
+}
+
+.social {
+  padding: 1.4rem 0;
+}
+
+.social i {
+  padding: 0.5rem;
+}
+
+.social i :hover {
+  background-color: midnightblue;
+  color: white;
+}
+
+@media only screen and (max-width: 750px) {
+  .nav.nav-menu, .nav-items {
+    flex-direction: column;
+  }
+  .toggle-collapse {
+    display: initial;
+  }
+}
+
+.site-title {
+  background: url(../images/road.jpg);
+  background-size: cover;
+  height: 110vh;
+  justify-content: center;
+}
+
+.site-background {
+  padding-top: 10rem;
+  text-align: center;
+  color: white;
+}
+
+.site-background h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+}
+
+.site-background h3 {
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.btn {
+  border: none;
+  background: #be4e84;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: transparent;
+  border: 1px solid blue;
+  color: white;
+}
+
+/*.............navbar........*/
+.nav {
+  background: white;
+  padding: 0 2rem;
+  height: 0rem;
+  min-height: 10vh;
+  overflow: hidden;
+}
+
+a {
+  color: grey;
+  text-decoration: none;
+}
+
+.nav-menu {
+  justify-content: space-between;
+}
+
+.nav .nav-brand a {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  text-decoration: none;
+  display: block;
+}
+
+.blog {
+  background: url(../images/beach.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100vh;
+  width: 100%;
+}
+
+.blog-post {
+  padding-top: 6rem;
+}
+
+.blog-post .blog-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin: 3rem 2rem;
+  box-shadow: 0 15px 20px;
+}
+
+.blog-post .blog-content .blog-title {
+  padding: 2rem 0;
+}
+
+.blog-post .blog-content .btn {
+  margin: 5rem;
+}
+
+.blog-post .blog-content .span {
+  display: block;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: medium;
+  font-style: italic;
+}
+
+.blog-post .blog-content .container {
+  margin: 0 5vw;
+}
+
+.site-content {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.text-gray {
+  color: white;
+}
+
+.post-content {
+  width: 35%;
+  margin-bottom: 5rem;
+}
+
+.post-content > .post-image, .post-title {
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+.site-content.post-content > .post-image, .post-info {
+  padding: 1rem;
+  background: #be4e84;
+  position: relative;
+  bottom: 0%;
+  border-radius: 3rem;
+}
+
+.site-content.post-content > .post-image.img {
+  width: 100%;
+}
+
+.site-content.post-content > .post-image.img:hover {
+  transform: scale(1.4);
+}
+
+.post-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+  color: gray;
+}
+
+.category-list {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.category-list .list-items {
+  background: brown;
+  border-radius: 3rem;
+  padding: .4rem 1rem;
+  width: 70%;
+  display: flex;
+  margin: .8rem 0;
+  justify-content: space-between;
+}
+
+.category-list .list-items a {
+  color: black;
+}
+
+/*......x.......navbar...x.....*/
+
+/*# sourceMappingURL=main.css.map */
